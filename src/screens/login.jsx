@@ -5,9 +5,7 @@ import { Link } from "react-router-dom"
 
 import Input from '../components/input';
 import Select from '../components/select';
-import Correo from '../components/correo';
 import Button from '../components/button'
-import Passwd from '../components/passwd';
 
 
 
@@ -22,10 +20,10 @@ function Login(){
                 <Input name="Nombre"/>
                 <Input name="Apellido"/>
             </div>
-            <Correo name="Correo"/>
+            <Input name="Correo Electronico" type="email" id="email"/>
             <Select name ="Motivo suscripción" options={select}/>
-            <Passwd name="Contraseña"/>
-            <Passwd name="Verifique su contraseña"/>
+            <Input name="Contraseña" type="password" id="passwd"/>
+            <Input name="Contraseña" type="password" id="passwd"/>
             <Button boton="Enviar solicitud"/>
             <div class="line"></div>
             <p>¿Ya tienes una cuenta?</p>

@@ -1,10 +1,8 @@
-
-
 function Input(props){
     return(
         <>
-            <label htmlFor="input">{props.name}
-                <input type="text" id="input" required/>
+            <label htmlFor={props.id}>{props.name}
+                <input type={props.type} id={props.id} required/>
             </label>
         </>
     )
