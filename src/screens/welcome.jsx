@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom"
+import { useNavigate } from 'react-router-dom';
+import Button from '../components/button'
+
 
 function Welcome(){
+
+    const navigate = useNavigate();
+
     return(
         <>
             <h1>Nike Factory</h1>
-            <Link to="/login" className="startNow--button">Empezar ahora</Link>
+            <Button type="button" class="startNow--button" to="/login" title="Comenzar"/>
         </>
     )
 

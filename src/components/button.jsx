@@ -1,7 +1,7 @@
 function Button(props){
     return(
         <>
-            <button className="submit" type="submit">{props.boton}</button>
+            <button type={props.type} className={props.class} onClick={() => navigate(props.to)} >{props.title}</button>
         </>
     )
 }

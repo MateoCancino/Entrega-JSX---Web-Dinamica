@@ -4,6 +4,8 @@ import nikeLogo from '../assets/Logo_Nike.png'
 import Input from '../components/input';
 import Button from '../components/button'
 
+import { useNavigate } from 'react-router-dom';
+const navigate = useNavigate();
 
 
 function Signin(){
@@ -13,7 +15,8 @@ function Signin(){
             <img src={nikeLogo} alt="Nike"/>
             <Input name="Correo Electronico" type="email" id="email"/>
             <Input name="Contraseña" type="password" id="passwd"/>
-            <Button boton="Ingresar"/>
+            <Input name="Contraseña" type="password" id="passwd"/>
+            <Button type="button" class="sing--button" to="/signin" title="Ingresar"/>
         </form>
     </>
     )
