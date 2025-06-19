@@ -27,7 +27,7 @@ function Login(){
             <Select name ="Motivo suscripción" options={select}/>
             <Input name="Contraseña" type="password" id="passwd"/>
             <Input name="Contraseña" type="password" id="passwd"/>
-            <Button type="submit" class="submit" to="/sent" title="Iniciar Sesión" />
+            <Button type="submit" className="submit" to="/sent" title="Iniciar Sesión" />
             <div class="line"></div>
             <p>¿Ya tienes una cuenta?</p>
             <Button type="button" className="sing--button" to="/signin" title="Iniciar Sesión"/>

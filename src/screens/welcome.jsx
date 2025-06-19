@@ -9,7 +9,7 @@ function Welcome(){
     return(
         <>
             <h1>Nike Factory</h1>
-            <Button type="button" class="startNow--button" to="/login" title="Comenzar"/>
+            <Button type="button" className="startNow--button" to="/login" title="Comenzar"/>
         </>
     )
 
