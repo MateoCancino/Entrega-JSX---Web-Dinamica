@@ -5,10 +5,11 @@ import Input from '../components/input';
 import Button from '../components/button'
 
 import { useNavigate } from 'react-router-dom';
-const navigate = useNavigate();
+
 
 
 function Signin(){
+    const navigate = useNavigate();
     return(
     <>
         <form class="form">
@@ -16,7 +17,7 @@ function Signin(){
             <Input name="Correo Electronico" type="email" id="email"/>
             <Input name="Contraseña" type="password" id="passwd"/>
             <Input name="Contraseña" type="password" id="passwd"/>
-            <Button type="button" class="sing--button" to="/signin" title="Ingresar"/>
+            <Button type="button" className="sing--button" to="/signin" title="Ingresar"/>
         </form>
     </>
     )

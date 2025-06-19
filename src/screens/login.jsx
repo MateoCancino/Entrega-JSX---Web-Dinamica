@@ -8,10 +8,11 @@ import Input from '../components/input';
 import Select from '../components/select';
 import Button from '../components/button'
 
-const navigate = useNavigate();
+
 
 
 function Login(){
+    const navigate = useNavigate();
     const [count, setCount] = useState(0)
     const select = ['Cliente','Becado','Entusiasta', 'Otros'];
     return(
@@ -29,7 +30,7 @@ function Login(){
             <Button type="submit" class="submit" to="/sent" title="Iniciar Sesión" />
             <div class="line"></div>
             <p>¿Ya tienes una cuenta?</p>
-            <Button type="button" class="sing--button" to="/signin" title="Iniciar Sesión"/>
+            <Button type="button" className="sing--button" to="/signin" title="Iniciar Sesión"/>
         </form>
     </>
     )
