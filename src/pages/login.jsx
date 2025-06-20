@@ -10,6 +10,7 @@ import Button from '../components/button'
 
 
 
+
 function Login(){
     const navigate = useNavigate();
     const [count, setCount] = useState(0)
@@ -46,7 +47,8 @@ function Login(){
     return(
     <>  
         <Navbar/>
-        <form className="form form--login" onSubmit={handleSubmit}>
+        <div className='form--container'>
+            <form className="form form--login" onSubmit={handleSubmit}>
             <img src={nikeLogo} alt="Nike"/>
             <div>
                 <Input name="Nombre" type="text" id="Nombre" value={nombre} onChange={handleNombreChange} />
@@ -62,6 +64,7 @@ function Login(){
             <p>¿Ya tienes una cuenta?</p>
             <Button type="button" className="sing--button" title="Iniciar Sesión" onClick={handleClick}/>
         </form>
+        </div>
         <Footer/>
     </>
     )

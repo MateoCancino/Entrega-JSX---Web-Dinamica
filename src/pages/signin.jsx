@@ -35,16 +35,19 @@ function Signin() {
     return (
         <>
             <Navbar/>
-            <form className="form" onSubmit={handleSubmit}>
+            <div className='form--container'>
+                <form className="form" onSubmit={handleSubmit}>
                 <img src={nikeLogo} alt="Nike" />
                 <Input name="Nombre" type="text" id="Nombre" value={nombre} onChange={handleNombreChange} />
                 <Input name="Correo Electrónico" type="email" id="email" />
                 <Input name="Contraseña" type="password" id="passwd1" value={password} onChange={(e) => setPassword(e.target.value)}/>
-                <Input name="Contraseña" type="password" id="passwd2" value={confirmPassword} onChange={ (e) => setConfirmPassword(e.target.value)}/>
+                <Input name="Confirme su contraseña" type="password" id="passwd2" value={confirmPassword} onChange={ (e) => setConfirmPassword(e.target.value)}/>
                 {error && <p className='error--text'>{error}</p>}
                 <Button type="submit" className="sing--button" title="Ingresar"/>
                 </form>
+            </div>
             <Footer/>
+            
         </>
         
     );

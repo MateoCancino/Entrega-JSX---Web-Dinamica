@@ -13,8 +13,10 @@ function Welcome(){
     return(
         <>
             <Navbar/>
-            <h1>Nike Factory</h1>
-            <Button type="button" className="startNow--button"  onClick={handleClick} title="Comenzar"/>
+            <div className="welcome-container">
+                <h1>Nike Factory</h1>
+                <Button type="button" className="startNow--button"  onClick={handleClick} title="Comenzar"/>
+            </div>
             <Footer/>
         </>
     )
