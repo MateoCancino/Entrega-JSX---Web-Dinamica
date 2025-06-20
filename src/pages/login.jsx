@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import nikeLogo from '../assets/Logo_Nike.png'
-
-import { Link } from "react-router-dom"
 import { useNavigate } from 'react-router-dom';
-
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 import Input from '../components/input';
 import Select from '../components/select';
 import Button from '../components/button'
@@ -45,8 +44,9 @@ function Login(){
     }
 
     return(
-    <>
-        <form className="form" onSubmit={handleSubmit}>
+    <>  
+        <Navbar/>
+        <form className="form form--login" onSubmit={handleSubmit}>
             <img src={nikeLogo} alt="Nike"/>
             <div>
                 <Input name="Nombre" type="text" id="Nombre" value={nombre} onChange={handleNombreChange} />
@@ -62,6 +62,7 @@ function Login(){
             <p>¿Ya tienes una cuenta?</p>
             <Button type="button" className="sing--button" title="Iniciar Sesión" onClick={handleClick}/>
         </form>
+        <Footer/>
     </>
     )
 }
