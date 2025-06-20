@@ -130,7 +130,7 @@ textarea{
 .h2--sent{
   font-size: 50px;
   font-weight: bold;
-  text-shadow: 2px 2px 10px rgb(255, 255, 255);
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -142,4 +142,14 @@ textarea{
   width: 600px;
   margin-top: -20px;
   border-radius: 6px;
+}
+
+.error--text{
+  color: #f6f6f6;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(248, 57, 57);
+  padding: 3px;;
+  border-radius: 2px;
+  margin-top: -5px;
 }

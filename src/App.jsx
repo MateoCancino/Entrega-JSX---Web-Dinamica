@@ -1,8 +1,8 @@
 import './App.css'
-import Login from './screens/login'
-import Signin from './screens/signin';
-import Welcome from './screens/welcome';
-import Sent from './screens/sent'
+import Login from './pages/login'
+import Signin from './pages/signin';
+import Welcome from './pages/welcome';
+import Sent from './pages/sent'
 
 import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
